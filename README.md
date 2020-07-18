@@ -37,4 +37,4 @@ The model scored an accuracy of 0.860 on Kaggle
 
 The [official document](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) of H20 AutoML states *"The H2O AutoML interface is designed to have as few parameters as possible so that all the user needs to do is point to their dataset, identify the response column and optionally specify a time constraint or limit on the number of total models trained."* Therefore, there were not many parameters to optimise. few of the parameters that have been optimised for the algorithm are discussed in the notebook.
 
-I have tried AutoML using [TPOT](https://github.com/EpistasisLab/tpot) as well, but in my opinion, I found AutoML from H20 much easier due to its capabilities of handling NAs and its speed. But to explore the data preparation and feature engineering steps I would prefer TPOT in the future.
+I have tried AutoML using [TPOT](https://github.com/EpistasisLab/tpot) as well, but in my opinion, I found AutoML from H20 much easier due to its capabilities of handling NAs and its speed. But to explore the data preparation and feature engineering steps I may prefer TPOT in the future.
