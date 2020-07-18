@@ -14,7 +14,7 @@ Steps involved in the model are:
 * Creating splines for most important numeric variables. Importance of variables has been identified through a random forest method.
 * Treating high cardinality variables (categorical variables having >30 factors) using Target Encoders.
 * Creating Interactions for most important categorical variables. Importance of the variables has been identified through binomial regression. Adding Interactions increased the Kagle score from 77% to 83%
-* Running random grid search on "alpha" paramter for the H2OGeneralizedLinearEstimator(binomial) function.
+* Running random grid search on **'alpha'** paramter for the H2OGeneralizedLinearEstimator(binomial) function.
 
 The model scored an accuracy of 0.848 on Kaggle.
 
@@ -22,7 +22,7 @@ The model scored an accuracy of 0.848 on Kaggle.
 Steps involved in the model are:
 * Treating high cardinality variables (categorical variables having >30 factors) using Target Encoders. Because I did not want H20 to create one-hot encodings for these high cardinality variables.
 * Creating Interactions for most important categorical variables. Importance of the variables has been identified through binomial regression.
-* Running Rando Grid Search and HyperOpt to get best hyperparameters. Eventually, Hyperopt returned a better result with less time. Hyper-parameters chosen for Grid search and HyperOpt were 'max_depth', 'sample_rate', 'min_rows', 'n_trees', 'learn_rate'.
+* Running Random Grid Search and HyperOpt to get best hyperparameters. Eventually, Hyperopt returned a better result with less time. Hyper-parameters chosen for Grid search and HyperOpt were **'max_depth', 'sample_rate', 'min_rows', 'n_trees', 'learn_rate'**.
 
 The model scored an accuracy of 0.865 on Kaggle
 
@@ -32,8 +32,9 @@ Steps involved in the model are:
 * Treating high cardinality variables (categorical variables having >30 factors) using Target Encoders.
 * Creating Interactions for most important categorical variables. Importance of the variables has been identified through binomial regression.
 * Running AutoML.
+
 The model scored an accuracy of 0.860 on Kaggle
 
-The [official document](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) of H20 Automl states "The H2O AutoML interface is designed to have as few parameters as possible so that all the user needs to do is point to their dataset, identify the response column and optionally specify a time constraint or limit on the number of total models trained." Therefore, there were not many parameters to optimise. few of the parameters that have been optimised for the algorithm are discussed in the notebook.
+The [official document](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) of H20 AutoML states "The H2O AutoML interface is designed to have as few parameters as possible so that all the user needs to do is point to their dataset, identify the response column and optionally specify a time constraint or limit on the number of total models trained." Therefore, there were not many parameters to optimise. few of the parameters that have been optimised for the algorithm are discussed in the notebook.
 
 I have also tried AutoML using [TPOT](https://github.com/EpistasisLab/tpot) as well, but in my opinion, I found AutoML from H20 much easier due to its capabilities of handling NAs and its speed. But to explore the data preparation and feature engineering steps TPOT is a better tool.
