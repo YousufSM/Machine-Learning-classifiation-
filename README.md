@@ -2,9 +2,9 @@
 Classification task using GLM, XGBoost and AutoML
 
 
-As an assignment under the module of Applied Machine Learning, our task was to create 3 classification models and compete on a private Kaggle competition. The [data](https://www.kaggle.com/c/aml2020/data) provided had masked 97 masked variables and the task was to focus on machine learning techniques rather than data comprehension. 
+As an assignment under the module of Applied Machine Learning, our task was to create 3 classification models and compete on a private Kaggle competition. The [data](https://www.kaggle.com/c/aml2020/data) provided had 97 masked variables.
 
-I have used [H20](https://www.h2o.ai/) packages since this was the project requirement plus H20 provides seamless solutions to handle missing values, create variable interactions, provide grid search and (Bayesian Hyper Parameters)[https://towardsdatascience.com/a-conceptual-explanation-of-Bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f] using HeperOpt. H20 is also been preferred due to its capability of parallel processing on multicore devices. Additionally, it provides an easier implementation of XGBoost and AutoML.
+I have used [H20](https://www.h2o.ai/) packages since this was the project requirement plus H20 provides seamless solutions to handle missing values, create variable interactions, provide grid search and [Bayesian Hyper Parameters](https://towardsdatascience.com/a-conceptual-explanation-of-Bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f) using HeperOpt. H20 is also been preferred due to its capability of parallel processing on multicore devices. Additionally, it provides an easier implementation of XGBoost and AutoML to me.
 
 
 Details of the models have been discussed below:
