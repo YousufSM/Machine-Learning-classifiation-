@@ -1,4 +1,4 @@
-# Machine-Learning-classification-
+# Supervised Machine-Learning-classification-
 Classification task using GLM, XGBoost and AutoML
 
 
